@@ -1,0 +1,241 @@
+$dm-container-color: #18191a;
+$dm-header-color: #242526;
+$dm-text-color: #e4e6eb;
+$dm-headings-sidebar: #b0b3b8;
+$dm-create-post-input-color: #3a3b3c;
+$dm-create-room-border-color: rgba(45, 136, 255, 0.2);
+$dm-hover-color: rgba(255, 255, 255, 0.15);
+$dm-seperate-color: #3e4042;
+$dm-scrollbar-color: #656768;
+$dm-bgc-color: rgba(255, 255, 255, 0.1);
+
+#dark-mode:checked ~ .header {
+  background-color: $dm-header-color;
+}
+
+#dark-mode:checked ~ .container {
+  background-color: $dm-container-color;
+}
+
+#dark-mode:checked ~ .header .header__user-name,
+#dark-mode:checked ~ .header .header__search-input {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .header .header__icon-link:hover,
+#dark-mode:checked ~ .header .header__dark-mode-icon:hover,
+#dark-mode:checked ~ .header .header__menu-icon:hover,
+#dark-mode:checked ~ .header .header__mess-icon:hover,
+#dark-mode:checked ~ .header .header__notify-icon:hover,
+#dark-mode:checked ~ .header .header__account-icon:hover,
+#dark-mode:checked ~ .header .header__wrap-user:hover,
+#dark-mode:checked ~ .header .header__wrap-sub-search:hover {
+  background-color: $dm-hover-color;
+}
+
+#dark-mode:checked
+  ~ .header
+  .header__icon-item--active
+  .header__icon-link:hover {
+  background-color: unset;
+}
+
+#dark-mode:checked ~ .header .header__dark-mode-icon,
+#dark-mode:checked ~ .header .header__menu-icon,
+#dark-mode:checked ~ .header .header__mess-icon,
+#dark-mode:checked ~ .header .header__notify-icon,
+#dark-mode:checked ~ .header .header__account-icon,
+#dark-mode:checked ~ .header .header__search-input,
+#dark-mode:checked ~ .header .header__wrap-sub-search {
+  background-color: $dm-bgc-color;
+}
+
+#dark-mode:checked ~ .container .left-sidebar {
+  background-color: $dm-container-color;
+}
+
+#dark-mode:checked ~ .container .right-sidebar {
+  background-color: $dm-container-color;
+}
+
+#dark-mode:checked ~ .container .left-sidebar .navigation__link,
+#dark-mode:checked ~ .container .left-sidebar .navigation__see-more-label {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .container .left-sidebar .groups__link {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .container .left-sidebar .navigation__item:hover,
+#dark-mode:checked ~ .container .left-sidebar .groups__item:hover {
+  background-color: $dm-hover-color;
+}
+
+#dark-mode:checked ~ .container .left-sidebar .groups__heading,
+#dark-mode:checked ~ .container .left-sidebar .coppyright__privacy,
+#dark-mode:checked ~ .container .left-sidebar .coppyright__text {
+  color: $dm-headings-sidebar;
+}
+
+#dark-mode:checked ~ .container .right-sidebar .right-sidebar__heading,
+#dark-mode:checked ~ .container .right-sidebar .group-conversations__heading {
+  color: $dm-headings-sidebar;
+}
+
+#dark-mode:checked ~ .container .right-sidebar .home-contacts__link,
+#dark-mode:checked ~ .container .right-sidebar .group-conversations__label {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .container .right-sidebar .home-contacts__item:hover,
+#dark-mode:checked
+  ~ .container
+  .right-sidebar
+  .group-conversations__wrap:hover {
+  background-color: $dm-hover-color;
+}
+
+#dark-mode:checked ~ .container .home-content .create-post,
+#dark-mode:checked ~ .container .home-content .create-room,
+#dark-mode:checked ~ .container .home-content .home-post,
+#dark-mode:checked ~ .container .home-content .create-story__label {
+  background-color: $dm-header-color;
+}
+
+#dark-mode:checked ~ .container .home-content .create-story__label {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-content__right-arrow {
+  background-color: $dm-seperate-color;
+  border: 1px solid $dm-seperate-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-content__right-arrow:hover {
+  background-color: #585a5c;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__dot {
+  color: $dm-headings-sidebar;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__icon,
+#dark-mode:checked ~ .container .home-content .home-post__status,
+#dark-mode:checked ~ .container .home-content .home-post__icon-like,
+#dark-mode:checked ~ .container .home-content .home-post__icon-cmt,
+#dark-mode:checked ~ .container .home-content .home-post__icon-share,
+#dark-mode:checked ~ .container .right-sidebar .right-sidebar__new-room-icon,
+#dark-mode:checked ~ .container .right-sidebar .right-sidebar__search,
+#dark-mode:checked ~ .container .right-sidebar .right-sidebar__options,
+#dark-mode:checked ~ .container .left-sidebar .navigation__see-more-icon,
+#dark-mode:checked ~ .container .right-sidebar .group-conversations__icon,
+#dark-mode:checked ~ .header .header__account-icon-img,
+#dark-mode:checked ~ .header .header__menu-icon-img,
+#dark-mode:checked ~ .header .header__dark-mode-img,
+#dark-mode:checked ~ .header .header__sub-search-icon,
+#dark-mode:checked ~ .header .header__search-icon,
+#dark-mode:checked ~ .header .dark-mode-icon,
+#dark-mode:checked ~ .container .home-content .home-content__arrow-icon {
+  filter: invert(1);
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__wrap-icon,
+#dark-mode:checked ~ .container .home-content .home-post__wrap-icon-like,
+#dark-mode:checked ~ .container .home-content .home-post__wrap-icon-cmt,
+#dark-mode:checked ~ .container .home-content .home-post__wrap-icon-share,
+#dark-mode:checked ~ .container .right-sidebar .right-sidebar__wrap-icon,
+#dark-mode:checked ~ .container .home-content .home-content__right-arrow {
+  filter: brightness(0.7);
+}
+
+#dark-mode:checked ~ .container .right-sidebar .right-sidebar__wrap-icon:hover {
+  background-color: $dm-hover-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__wrap-3-icon,
+#dark-mode:checked ~ .container .home-content .create-post__wrap {
+  border-top: 1px solid $dm-seperate-color;
+}
+
+#dark-mode:checked ~ .container .right-sidebar .home-contacts::after,
+#dark-mode:checked ~ .container .left-sidebar .navigation::after {
+  background-color: $dm-seperate-color;
+}
+
+#dark-mode:checked ~ .container .home-content .create-post__input {
+  background-color: $dm-create-post-input-color;
+}
+
+#dark-mode:checked ~ .container .home-content .create-post__label {
+  color: $dm-headings-sidebar;
+}
+
+#dark-mode:checked ~ .container .home-content .create-room__icon-and-label {
+  background-color: $dm-header-color;
+}
+
+#dark-mode:checked ~ .container .home-content .create-room__icon-and-label {
+  border: 2px solid $dm-create-room-border-color;
+}
+
+#dark-mode:checked
+  ~ .container
+  .home-content
+  .create-post__icon-and-label:hover {
+  background-color: $dm-hover-color;
+}
+
+#dark-mode:checked
+  ~ .container
+  .home-content
+  .create-room__icon-and-label:hover {
+  background-color: $dm-hover-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__wrap-icon:hover,
+#dark-mode:checked ~ .container .home-content .home-post__icon-and-label:hover {
+  background-color: $dm-hover-color;
+}
+
+#dark-mode:checked ~ .container .home-content .create-post__input {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .container .home-content .create-story__wrap-icon {
+  border: 4px solid $dm-header-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__name {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__time {
+  color: $dm-headings-sidebar;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__desc {
+  color: $dm-text-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__like-icon {
+  border: 2px solid $dm-header-color;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__likes-cmts-shares {
+  color: $dm-headings-sidebar;
+}
+
+#dark-mode:checked ~ .container .home-content .home-post__label {
+  color: $dm-headings-sidebar;
+}
+
+#dark-mode:checked ~ .container .left-sidebar:hover::-webkit-scrollbar-thumb,
+#dark-mode:checked ~ .container .right-sidebar:hover::-webkit-scrollbar-thumb {
+  background: $dm-scrollbar-color;
+}
+
+#dark-mode:checked ~ .container .left-sidebar .navigation__see-more-wrap,
+#dark-mode:checked ~ .container .right-sidebar .group-conversations__wrap-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,209 @@
+.right-sidebar {
+  position: fixed;
+  top: 56px;
+  right: 8px;
+  bottom: 0;
+  z-index: 5;
+  width: calc((100vw + 80px) / 5);
+  overflow-y: auto;
+
+  background-color: $containerColor;
+
+  user-select: none;
+
+  &__heading-and-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+  }
+
+  &__heading {
+    margin: 0 0 0 8px;
+    color: #65676b;
+
+    font-size: 1.7rem;
+    font-weight: 500;
+    user-select: none;
+  }
+
+  &__wrap-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__wrap-icon {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 100rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hoverColor;
+    }
+  }
+
+  &__new-room-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+
+    background-image: url("../images/icons/icons-2.png");
+    background-repeat: no-repeat;
+    background-position: 0px -125px;
+    background-size: auto;
+  }
+
+  &__search {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+
+    background-image: url("../images/icons/icons-1.png");
+    background-repeat: no-repeat;
+    background-position: -170px -149px;
+    background-size: auto;
+  }
+
+  &__options {
+    position: relative;
+    top: -2px;
+    left: 0px;
+
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+
+    background-image: url("../images/icons/icons-1.png");
+    background-repeat: no-repeat;
+    background-position: -149px -107px;
+    background-size: auto;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background: $scrollbarColor;
+  }
+}
+
+.home-contacts {
+  position: relative;
+  list-style: none;
+  padding: 0 0 9px 0;
+  margin: 4px 0 16px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 8px);
+    height: 1px;
+    background-color: #ced0d4;
+  }
+
+  &__item {
+    border-radius: 8px;
+
+    &:hover {
+      background-color: $hoverColor;
+    }
+  }
+
+  &__item--online {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: 28px;
+      width: 6px;
+      height: 6px;
+      border-radius: 100rem;
+      border: 1px solid $whiteColor;
+      background-color: #31a24c;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    color: $textColor;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &__img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 100rem;
+  }
+}
+
+.group-conversations {
+  &__heading {
+    margin: 0 0 0 8px;
+    color: #65676b;
+
+    font-size: 1.7rem;
+    font-weight: 500;
+    user-select: none;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: $hoverColor;
+    }
+  }
+
+  &__wrap-icon {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin: 0 10px 0 8px;
+    border-radius: 100rem;
+
+    background-color: rgba($color: #000000, $alpha: 0.06);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+    background-image: url("../images/icons/icons-1.png");
+    background-position: -63px -128px;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    color: $textColor;
+    font-weight: 500;
+  }
+}

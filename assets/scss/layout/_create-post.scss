@@ -1,0 +1,101 @@
+.create-post {
+  border-radius: 10px;
+  padding: 12px 16px 10px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  background-color: $whiteColor;
+
+  user-select: none;
+
+  &__avt-and-input {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
+
+  &__avatar-link {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-right: 8px;
+    text-decoration: none;
+  }
+
+  &__input {
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 100rem;
+
+    background-color: #f0f2f5;
+
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 22px;
+
+    cursor: pointer;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 8px;
+    margin-top: 12px;
+    border-top: 1px solid #e4e6eb;
+  }
+
+  &__icon-and-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    min-width: 156px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hoverColor;
+    }
+  }
+
+  &__label {
+    color: #65676b;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 8px;
+
+    user-select: none;
+  }
+
+  &__live-video-icon,
+  &__photo-icon,
+  &__feeling-icon {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/icons/icons-3.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+
+  &__live-video-icon {
+    background-position: 0 0;
+  }
+
+  &__photo-icon {
+    background-position: 0 -225px;
+  }
+
+  &__feeling-icon {
+    background-position: 0 -25px;
+  }
+}
